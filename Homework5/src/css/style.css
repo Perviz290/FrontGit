@@ -1,0 +1,257 @@
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+#First{
+background: url(/src/image/header-bg.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#Header{
+padding: 1.5rem;
+}
+#Header .header-all .logo{
+    float: left;
+}
+.logo img{
+width: 195px;
+margin-left: 270px;
+}
+#Header .header-all .navbar {
+   margin-right: 70px;
+    float: right;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 40px;
+    }
+    .navbar :hover{
+        color: #ffc800;
+    }
+
+.First-container{
+    padding-top: 15rem;
+    padding-bottom: 10.5rem;
+    text-align: center;
+}
+.First-container h4{
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+.First-container h2{
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+    color: #fff;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+}
+.First-container a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: #ffc800;
+    padding: 20px 40px;
+    font-family:"Montserrat", -apple-system, BlinkMacSystemFont,
+     "Segoe UI", Roboto,"Helvetica Neue", Arial, sans-serif, 
+     "Apple Color Emoji",  "Segoe UI Emoji", "Segoe UI Symbol", 
+     "Noto Color Emoji" ;
+     border-radius: 5px;
+}
+
+#Service{
+    padding: 6rem 0;
+    margin: 0px 145px;
+    overflow: auto;
+}
+
+ #Service .service-text{
+    text-align: center;
+
+}
+.service-text h2{
+font-size: 40px;
+margin-bottom: 16px;
+}
+
+.service-text h3{
+    font-size: 16px;
+    margin-bottom: 64px;
+  color: #6c757d ;  
+}
+
+#Service .box-all .box{
+    float: left;
+    width: 33.3%;
+    padding: 0px 12px;
+    text-align: center;
+   
+}
+
+.images{
+    width: 150px;
+    height: 150px;
+    background-color: #ffc800;
+    border-radius: 100%;
+    margin-left: 94px;
+}
+
+.box-all .box h4{
+font-size: 24px;
+margin: 16px 0;
+}
+
+.box-all .box p{
+    font-size: 16px;
+    margin: 0 0 16px;
+
+}
+
+#Portfolio{
+    padding: 96px 0;
+    overflow: auto;
+    margin: 0px 145px;
+
+
+}
+#Portfolio .portfolio-text{
+    text-align: center;
+    overflow: auto;
+
+}
+.portfolio-text h2{
+font-size: 40px;
+margin: 0 0 16px;
+
+}
+.portfolio-text h3{
+    font-size:  16px;
+    margin: 0 0 64px;
+    color: #6c757d;
+
+}
+
+#Portfolio .portfolio-box-all .portfoliobox{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+
+} 
+
+.portfolio-box-all .portfoliobox img{
+    width: 100%;
+    padding: 0px 16px;
+    transition: 1s;
+    
+}
+
+.portfolio-box-all .portfoliobox img:hover {
+    opacity: 0.3;
+  }
+  
+
+.portfolio-box-all .portfoliobox .portfoliobox-text{
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+#Team{
+    padding:0px 95px 0px;
+    text-align: center;
+    overflow: auto;
+   
+
+}
+
+#Team .team-text1 h2{
+font-size: 40px;
+margin: 0px 0px 16px;
+
+}
+
+#Team .team-text1 h3{
+    font-size: 16px;
+margin: 0px 0px 64px;
+color: #6C757D;
+}
+
+
+
+.team-box-all .team-box{
+    float: left;
+    width: 33.3%;
+    padding: 0px 12px;
+}
+
+#Team .team-box-all .team-box img{
+    border-radius: 50%;
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
