@@ -1,0 +1,554 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#First {
+    background-color: #000000;
+    background-image: url(/src/image/hero_02.jpg);
+    background-position: 75% 40%;
+    background-repeat: no-repeat;
+    background-size: 520px auto;
+}
+
+#First .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 180px;
+    padding: 50px 0px;
+}
+
+.nav h2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 36.38px;
+}
+
+.nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 0;
+    letter-spacing: -0.4px;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: 2s;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #e9204f;
+}
+
+.nav ul li.active a {
+    border-bottom: 2px solid #e9204f;
+}
+
+.content {
+    margin: 0 180px;
+}
+
+
+.content hr {
+    width: 5%;
+    background-color: #e9204f;
+    padding: 1px 0;
+    margin: 25px 0px 20px;
+    border: 1px solid #e9204f;
+
+}
+
+.content h2 {
+    color: white;
+    font-size: 78px;
+    margin: 0px 0px 20px;
+
+}
+
+.content a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 16px 27px;
+    border: 2px solid #e9204f;
+    width: 16%;
+    transition: 2s;
+}
+
+.infobox {
+    margin: 0 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.infobox .box {
+    width: 31%;
+    padding: 50px;
+    background-color: #101010;
+
+}
+
+.infobox .box i {
+    font-size: 40px;
+    color: #e9204f;
+    margin-bottom: 60px;
+
+}
+
+.infobox .box h3 {
+    font-size: 24px;
+    color: white;
+    position: relative;
+}
+
+.infobox .box:hover {
+    background-color: #e9204f;
+
+}
+
+.infobox .box:hover i {
+    color: white;
+
+}
+
+.infobox .box:hover h3::before {
+    width: 120px;
+}
+
+.infobox .box h3::before {
+    transition: 1s;
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+}
+
+.infobox .box p {
+    margin-top: 20px;
+    font-size: 17px;
+    color: white;
+}
+
+
+#Second {
+    background-color: black
+}
+
+
+#Second .second-hero {
+    margin: 0 180px;
+    padding: 140px 0;
+
+}
+
+.second-text hr {
+
+    width: 5%;
+    background-color: #e9204f;
+    padding: 1px 0;
+    margin: 0px 0px 20px;
+    border: 1px solid #e9204f;
+
+}
+
+.second-text h2 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    margin: 0 0 20px;
+}
+
+.second-text h4 {
+    color: #e9204f;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 17px;
+    margin-bottom: 50px;
+
+}
+
+#Second .second-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.second-box .box {
+
+    width: 30%;
+    padding: 35px 40px;
+    background-color: #101010;
+    margin-bottom: 35px;
+    transition: 0.3s;
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+
+.second-box .box:hover {
+    padding-left: 50px;
+    background-color: #e9204f;
+}
+
+#Third {
+    background-color: black;
+
+}
+
+.third-hero {
+    margin: 0 180px;
+    padding: 140px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-text hr {
+    width: 20%;
+    background-color: #e9204f;
+    padding: 1px 0;
+    margin: 0px 0px 20px;
+    border: 1px solid #e9204f;
+}
+
+.third-text h2 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    margin: 0 0 20px;
+}
+
+.third-text h4 {
+    color: #e9204f;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 17px;
+    margin-bottom: 50px;
+
+}
+
+.third-link {
+    align-self: center;
+    padding: 10px 10px;
+
+}
+
+.third-link a {
+    padding: 15px 32px;
+    border: 2px solid #e9204f;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+#About {
+    background: #101010;
+
+}
+
+#About .about-hero {
+    margin: 0 180px;
+    padding: 140px 0;
+}
+
+.about-hero .about-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+
+}
+
+.about-text .left {
+    width: 40%;
+    color: white;
+
+}
+
+.about-text .right {
+    width: 60%;
+    color: white;
+
+}
+
+.about-text .left hr {
+    width: 10%;
+    background-color: #e9204f;
+    padding: 1px 0;
+    margin: 0px 0px 20px;
+    border: 1px solid #e9204f;
+}
+
+
+.about-text .left h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-text .left h4 {
+    font-size: 18px;
+    color: #e9204f;
+}
+
+.about-text .right p {
+    font-size: 18px;
+    color: #acacac;
+    line-height: 26px;
+}
+
+.about-hero .about-image {
+
+    display: flex;
+    gap: 10px;
+}
+
+.about-image .image-left {
+    display: flex;
+    flex: 2;
+}
+
+.about-image .images-right .image-right {
+    flex: 1;
+}
+
+.image-left img,
+.images-right .image-right img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.image-left img:hover,
+.images-right .image-right img:hover {
+    filter: grayscale(0);
+}
+
+
+.about-image .images-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Qeyd burde 3 shekilin icine metinler qoyulacaq  */
+
+#About .about-text2 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text2 .text2 {
+    width: 32%;
+}
+
+
+.about-text2 .text2 h2 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 28px;
+    letter-spacing: -0.04px;
+
+}
+
+.about-text2 .text2 p {
+    font-size: 17px;
+    color: #acacac;
+    line-height: 26px;
+}
+
+
+#Clients {
+    background-color: #101010;
+
+}
+
+#Clients .clients-hero {
+    margin: 0 180px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.clients-hero .client-text {
+    width: 55%;
+    padding: 35px 0px;
+
+}
+
+.clients-hero .client-image {
+    width: 40%;
+}
+
+.client-image img {
+    width: 100%;
+}
+
+
+
+
+
+
+.client-text .hr1 {
+    width: 10%;
+    background-color: #e9204f;
+    padding: 1px 0;
+    margin: 0px 0px 20px;
+    border: 1px solid #e9204f;
+}
+
+.client-text .hr2 {
+    margin-bottom: 40px;
+    width: 10%;
+    background-color: #acacac;
+    padding: 1px 0;
+    margin: 0px 0px 20px;
+    border: 1px solid #acacac;
+}
+
+.client-text h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #ffffff;
+    line-height: 60px;
+}
+
+.client-text h4 {
+    margin-bottom: 40px;
+    color: #e9204f;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 17px;
+}
+
+.client-text p {
+    margin-bottom: 40px;
+    color: #acacac;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.client-text h6 {
+    color: #ffffff;
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 26px;
+}
+
+
+
+
+
+#Latest{
+    background-color: #101010;
+}
+
+#Latest .latest-news{
+    padding: 140px 0;
+
+}
+
+.latest-news .news-text{
+    text-align: center;
+}
+
+.latest-news .news-text h2{ 
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    margin-bottom: 20px;
+}
+
+.latest-news .news-text h4{
+    color: #e9204f;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 17px;
+    margin-bottom: 60px;
+}
+
+
+
+
+
+.latest-news .news-photo{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.latest-news .news-photo .photo{
+   width: 33%;
+   overflow: hidden;
+}
+
+.photo img{
+     height: 460px;
+    object-fit: cover;
+    width: 100%;
+    filter: grayscale(1);
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.news-photo .photo:hover img{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
