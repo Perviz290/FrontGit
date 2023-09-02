@@ -79,7 +79,25 @@
     padding: 16px 27px;
     border: 2px solid #e9204f;
     width: 16%;
-    transition: 2s;
+    position: relative;
+    z-index: 1;
+
+}
+
+.content a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #E9204F;
+    transition: 1s;
+    z-index: -1;
+}
+
+.content a:hover::before {
+    width: 100%;
 }
 
 .infobox {
@@ -87,12 +105,26 @@
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.infobox::before {
+    content: "";
+    background-color: #E9204F;
+    height: 70px;
+    width: 33%;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    z-index: -1;
 }
 
 .infobox .box {
     width: 31%;
     padding: 50px;
     background-color: #101010;
+    transition: 2s;
 
 }
 
@@ -212,9 +244,12 @@
 
 }
 
-.third-hero {
+#Third .third-container {
     margin: 0 180px;
     padding: 140px 0;
+}
+
+.third-hero {
     display: flex;
     justify-content: space-between;
 }
@@ -256,9 +291,49 @@
     border: 2px solid #e9204f;
     color: white;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
 
 }
 
+
+.third-link a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #e9204f;
+    transition: 1s;
+    z-index: -1;
+}
+
+.third-link a:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+.third-pictures {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.third-pictures .picture {
+    width: 33%;
+    position: relative;
+
+}
+
+.third-pictures .picture img {
+    height: 460px;
+    object-fit: cover;
+    width: 100%;
+}
 
 #About {
     background: #101010;
@@ -405,11 +480,27 @@
 
 .clients-hero .client-image {
     width: 40%;
+    position: relative;
+    z-index: 1;
 }
+
+.clients-hero .client-image::before {
+    content: "";
+    background-color: #E9204F;
+    height: 85px;
+    width: 25%;
+    position: absolute;
+    bottom: 0px;
+    right: -18px;
+    z-index: -1;
+}
+
 
 .client-image img {
     width: 100%;
 }
+
+
 
 
 
@@ -466,20 +557,20 @@
 
 
 
-#Latest{
+#Latest {
     background-color: #101010;
 }
 
-#Latest .latest-news{
+#Latest .latest-news {
     padding: 140px 0;
 
 }
 
-.latest-news .news-text{
+.latest-news .news-text {
     text-align: center;
 }
 
-.latest-news .news-text h2{ 
+.latest-news .news-text h2 {
     color: #ffffff;
     font-size: 48px;
     font-weight: 700;
@@ -487,7 +578,7 @@
     margin-bottom: 20px;
 }
 
-.latest-news .news-text h4{
+.latest-news .news-text h4 {
     color: #e9204f;
     font-size: 18px;
     font-weight: 700;
@@ -500,19 +591,19 @@
 
 
 
-.latest-news .news-photo{
+.latest-news .news-photo {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.latest-news .news-photo .photo{
-   width: 33%;
-   overflow: hidden;
+.latest-news .news-photo .photo {
+    width: 33%;
+    overflow: hidden;
 }
 
-.photo img{
-     height: 460px;
+.photo img {
+    height: 460px;
     object-fit: cover;
     width: 100%;
     filter: grayscale(1);
@@ -520,35 +611,8 @@
     transition: 0.3s;
 }
 
-.news-photo .photo:hover img{
+.news-photo .photo:hover img {
     filter: grayscale(0);
     transform: scale(1.1);
-    
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
