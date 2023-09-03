@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#About .about-container {
+  padding: 0 40px;
+
+}
+
+.about-container .about-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+
+}
+
+.about-hero .about-left {
+  width: 80%;
+}
+
+.about-left a {
+  display: inline-block;
+  text-decoration: none;
+  color: #666666;
+  font: 14px;
+  font-weight: 500;
+  margin: 0 24px 0 0;
+}
+
+.about-left .difirent-box {
+  color: #0056c1;
+  padding: 6px 12px;
+  border: 1.5px solid #0056c1;
+  border-radius: 40px;
+  transition: 0.5s;
+}
+
+.about-left .difirent-box:hover {
+  background-color: #0056c1;
+  color: white;
+}
+
+.about-hero .about-right {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.about-right .search {
+  margin-left: 20px;
+}
+
+.about-right .language {
+  margin-left: 20px;
+}
+
+.about-right .call {
+  margin-left: 20px;
+}
+
+/* section Border */
+#Border .border-container {
+
+  padding: 0 40px;
+
+}
+
+.border-container .border-hero {
+
+  display: flex;
+  align-items: center;
+
+}
+
+.border-hero .border-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+
+.border-left img {
+  height: 50px;
+}
+
+.border-left a {
+  margin-left: 25px;
+  color: #262626;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.border-left a:hover {
+  color: #666666;
+}
+
+.border-hero .border-right {
+  width: 50%;
+  text-align: right;
+
+}
+
+.border-right a {
+  text-decoration: none;
+}
+
+
+
+/* section Header */
+
+#Header .header-contenir {
+  padding: 0 40px;
+}
+
+.header-contenir .header-hero {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.header-contenir .header-hero a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: #262626;
+  font-size: 15px;
+}
+
+#Headermedia {
+  display: none;
+}
+
+
+@media(max-width:576px) {
+
+  #About,
+  #Border,
+  #Header {
+    display: none;
+  }
+
+  #Headermedia {
+    display: block;
+  }
+
+  #Headermedia .headermedia-contenir {
+    padding: 0 15px;
+  }
+
+  #Headermedia .header-first {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-first .first-right {
+    display: flex;
+
+  }
+
+  .header-first .first-right .language {
+    margin-left: 15px;
+
+  }
+
+  .header-first .first-right .call {
+    margin-left: 15px;
+  }
+}
+
+#Headermedia .header-second {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-second .second-right {
+  text-align: right;
+}
