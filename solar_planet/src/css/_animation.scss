@@ -1,0 +1,128 @@
+
+
+
+.planet1{
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.5);
+    animation: animate1 2s linear infinite;
+  }
+
+  @keyframes animate1{
+    0%{
+      transform: translate(-50%,-50%)rotate(0);
+    }
+    100%{
+      transform: translate(-50%,-50%)rotate(360deg);
+    }
+  }
+
+
+  .planet2{
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.5);
+    animation: animate2 4s linear infinite;
+  }
+
+  @keyframes animate2{
+    0%{
+      transform: translate(-50%,-50%)rotate(0);
+    }
+    100%{
+      transform: translate(-50%,-50%)rotate(360deg);
+    }
+  }
+
+
+
+  .planet3{
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.5);
+    animation: animate3 6s linear infinite;
+  }
+
+  @keyframes animate3{
+    0%{
+      transform: translate(-50%,-50%)rotate(0);
+    }
+    100%{
+      transform: translate(-50%,-50%)rotate(360deg);
+    }
+  }
+
+  .planet4{
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.5);
+    animation: animate4 8s linear infinite;
+  }
+
+  @keyframes animate4{
+    0%{
+      transform: translate(-50%,-50%)rotate(0);
+    }
+    100%{
+      transform: translate(-50%,-50%)rotate(360deg);
+    }
+  }
+
+
+  .planet5{
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.5);
+    animation: animate5 10s linear infinite;
+  }
+
+  @keyframes animate5{
+    0%{
+      transform: translate(-50%,-50%)rotate(0);
+    }
+    100%{
+      transform: translate(-50%,-50%)rotate(360deg);
+    }
+  }
+
+  .planet6{
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.5);
+    animation: animate6 10s linear infinite;
+  }
+
+  @keyframes animate6{
+    0%{
+      transform: translate(-50%,-50%)rotate(0);
+    }
+    100%{
+      transform: translate(-50%,-50%)rotate(360deg);
+    }
+  }
+
+
+  .planet7{
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.5);
+    animation: animate7 12s linear infinite;
+  }
+
+  @keyframes animate7{
+    0%{
+      transform: translate(-50%,-50%)rotate(0);
+    }
+    100%{
+      transform: translate(-50%,-50%)rotate(360deg);
+    }
+  }
+
+
+  .planet8{
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.5);
+    animation: animate8 15s linear infinite;
+  }
+
+  @keyframes animate8{
+    0%{
+      transform: translate(-50%,-50%)rotate(0);
+    }
+    100%{
+      transform: translate(-50%,-50%)rotate(360deg);
+    }
+  }
