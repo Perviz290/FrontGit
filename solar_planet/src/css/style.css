@@ -188,74 +188,59 @@ span::before, span::after {
   border-radius: 50%;
 }
 
-.Mercury::before {
+.Mercury img {
   width: 20px;
-  height: 20px;
-  bottom: 10px;
-  left: 2px;
-  background-color: #979797;
+  position: absolute;
+  right: 4px;
+  bottom: 9px;
 }
 
-.Venus::before {
+.Venus img {
   width: 25px;
-  height: 25px;
-  bottom: 60px;
-  right: 145px;
-  background-color: #ff2c00;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
-.Earth::before {
+.Earth img {
   width: 30px;
-  height: 30px;
+  position: absolute;
   bottom: 50px;
   right: -5px;
-  background-color: #0099ff;
 }
 
-.Mars::before {
+.Mars img {
   width: 30px;
-  height: 30px;
+  position: absolute;
   bottom: 55px;
   left: 3px;
-  background-color: #ff2433;
 }
 
-.Jupiter::before {
+.Jupiter img {
   width: 40px;
-  height: 40px;
+  position: absolute;
   bottom: -15px;
   left: 120px;
-  background-color: #ffb624;
 }
 
-.Saturn::before {
-  width: 40px;
-  height: 40px;
-  top: 120px;
-  left: -7px;
-  background-color: #ffb84d;
+.Saturn img {
+  width: 60px;
+  position: absolute;
+  top: 113px;
+  left: -16px;
 }
 
-.Saturn::after {
-  width: 80px;
-  height: 20px;
-  top: 130px;
-  left: -25px;
-  background-color: #ffb84d;
-}
-
-.Uranus::before {
+.Uranus img {
   width: 37px;
-  height: 37px;
+  position: absolute;
   bottom: 135px;
   left: 1px;
-  background-color: #4d6bff;
 }
 
-.Neptune::before {
+.Neptune img {
   width: 41px;
-  height: 41px;
+  position: absolute;
   top: 20px;
   right: 115px;
-  background-color: #d04dff;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
