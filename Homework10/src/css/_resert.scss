@@ -99,6 +99,13 @@ ul li {
                 a {
                     font-size: 14px;
                     color: white;
+                    transition: 1s;
+
+                    &:hover{
+                        color: #f85a40;
+                    }
+                 
+
                 }
 
             }
