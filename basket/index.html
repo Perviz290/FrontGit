@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="src/css/style.css" />
+   </head>
+   <body>
+      <div class="card">
+         <span>Cart</span>
+         <div class="cartContainer">
+            <div></div>
+            <div></div>
+         </div>
+      </div>
+
+      <div class="items-container"></div>
+   </body>
+
+   <script type="module">
+      import { getItems } from "./src/js/script.js";
+
+      // LocalStorage ucun ilk deyer verme:
+      (function () {
+         let item = [
+            {
+               id: 0,
+               item: {
+                  itemCount: 0,
+                  img: "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-1.jpg",
+                  category: "Snack",
+                  title: "Seeds of Change Organic Quinoe",
+                  vote: {
+                     average: 4.2,
+                     star: "xxxxx",
+                  },
+                  company: "NestFood",
+                  itemPrice: {
+                     newPrice: 48.85,
+                     oldPrice: 52.8,
+                     currency: {
+                        azn: "₼",
+                        tl: "₺",
+                        usd: "$",
+                        euro: "€",
+                     },
+                  },
+                  stockStatus: {
+                     InStock: false,
+                     OutStock: false,
+                     SaleOff: true,
+                  },
+               },
+            },
+            {
+               id: 1,
+               item: {
+                  itemCount: 0,
+                  img: "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-1.jpg",
+                  category: "Hodo Foods",
+                  title: "All Natural Italian-Style Chicken",
+                  vote: {
+                     average: 3.5,
+                     star: "xxx",
+                  },
+                  company: "Stouffer",
+                  itemPrice: {
+                     newPrice: 52.85,
+                     oldPrice: 55.8,
+                     currency: {
+                        azn: "₼",
+                        tl: "₺",
+                        usd: "$",
+                        euro: "€",
+                     },
+                  },
+                  stockStatus: {
+                     InStock: true,
+                     OutStock: false,
+                     SaleOff: false,
+                  },
+               },
+            },
+            {
+               id: 2,
+               item: {
+                  itemCount: 0,
+                  img: "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-1.jpg",
+                  category: "Vegetables",
+                  title: "Foster Farms Takeout Crispy Classic",
+                  vote: {
+                     average: 2.0,
+                     star: "xx",
+                  },
+                  company: "StarKist",
+                  itemPrice: {
+                     newPrice: 17.85,
+                     oldPrice: 19.8,
+                     currency: {
+                        azn: "₼",
+                        tl: "₺",
+                        usd: "$",
+                        euro: "€",
+                     },
+                  },
+                  stockStatus: {
+                     InStock: false,
+                     OutStock: true,
+                     SaleOff: false,
+                  },
+               },
+            },
+            {
+               id: 3,
+               item: {
+                  itemCount: 0,
+                  img: "https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-1.jpg",
+                  category: "Pet Foods",
+                  title: "Blue Diamond Almonds Lightly",
+                  vote: {
+                     average: 3.2,
+                     star: "xxx",
+                  },
+                  company: "Old El Paso",
+                  itemPrice: {
+                     newPrice: 23.85,
+                     oldPrice: 25.8,
+                     currency: {
+                        azn: "₼",
+                        tl: "₺",
+                        usd: "$",
+                        euro: "€",
+                     },
+                  },
+                  stockStatus: {
+                     InStock: true,
+                     OutStock: false,
+                     SaleOff: false,
+                  },
+               },
+            },
+         ];
+         let wishList = [
+            {
+               id: [],
+               wlStatus: [],
+            },
+         ];
+         let basket = {
+            totalProduct: 0,
+            totalPrice: 0,
+            basketProducts: [],
+         };
+
+         localStorage.clear();
+         localStorage.setItem("addProducts", JSON.stringify(item));
+         localStorage.setItem("wishlist", JSON.stringify(wishList));
+         localStorage.setItem("basket", JSON.stringify(basket));
+      })();
+
+      // Timer:
+      function timer(time = 3) {
+         document.querySelector(".items-container").innerHTML = time;
+         let timeDuration = setInterval(() => {
+            if (time != 0) {
+               time--;
+               document.querySelector(".items-container").innerHTML = time;
+               if (time == 0) {
+                  document.querySelector(".items-container").innerHTML =
+                     "loading...";
+               }
+            } else {
+               document.querySelector(".items-container").innerHTML = "";
+               clearInterval(timeDuration);
+
+               const lsProducts = JSON.parse(
+                  localStorage.getItem("addProducts")
+               );
+
+               lsProducts.forEach(({ id, item }) => {
+                  const {
+                     category,
+                     title,
+                     vote,
+                     company,
+                     itemCount,
+                     itemPrice: { currency, newPrice, oldPrice },
+                  } = item;
+                  document.querySelector(".items-container").innerHTML += `
+      <div class="item item${id}">
+      <!-- Mehsul miqdari -->
+      <div class="count">${itemCount}</div>
+
+      <!-- Mehsul sekli -->
+      <div class="mehsul-sekil">
+      	<img
+      		src=${item.img}
+      	/>
+      </div>
+
+      <!-- Mehsul aciqlama -->
+      <div class="mehsul-aciqlama">
+      	<div class="kateqoriya">${category}</div>
+      	<div class="aciqlama">${title}</div>
+      	<div class="ulduzsistemi">
+      		<span class="ulduz">${vote.star}</span>
+      		<span class="ulduzDeyer">(${vote.average})</span>
+      	</div>
+      	<div class="firmaAdi">by <a href="">${company}</a></div>
+      </div>
+
+      <!-- Qiymet ve Add -->
+      <div class="qiymetVeButton">
+      	<!-- Qiymet -->
+      	<div class="qiymet">
+      		<span class="esasqiymet">${currency.usd}${newPrice}</span>
+      		<span class="kohneqiymet">${currency.usd}${oldPrice}</span>
+      	</div>
+
+      	<!-- Buton -->
+      	<div class="elaveEt">
+      		<button>
+      			<i class="fa-solid fa-basket-shopping"></i>
+      			Add
+      		</button>
+      	</div>
+      </div>
+      </div>
+      				`;
+               });
+
+               getItems(document.querySelectorAll(".items-container .item"));
+            }
+         }, 1000);
+      }
+      timer();
+   </script>
+   <script src="src/js/script.js" type="module"></script>
+</html>

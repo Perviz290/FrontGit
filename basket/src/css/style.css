@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+.checkoutPage {
+  display: flex;
+  padding: 30px;
+}
+.checkoutPage > div {
+  border: 3px solid white;
+  padding: 30px;
+}
+.checkoutPage .leftSide {
+  width: 70%;
+}
+.checkoutPage .leftSide h3 {
+  font-size: 30px;
+}
+.checkoutPage .leftSide .productSayi {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.checkoutPage .leftSide table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.checkoutPage .leftSide table img {
+  height: 100px;
+}
+.checkoutPage .rightSide {
+  width: 30%;
+}
+.checkoutPage .rightSide .solsag {
+  display: flex;
+  justify-content: space-between;
+}
+.checkoutPage .rightSide .solsag > span {
+  font-weight: bold;
+  color: white;
+}
+
+body {
+  background-color: blue;
+  position: relative;
+}
+body .card {
+  background-color: white;
+  width: 150px;
+  position: absolute;
+  right: 0px;
+  top: -50px;
+  margin-right: 100px;
+  padding: 10px;
+  z-index: 99999 !important;
+}
+body .card:hover .cartContainer {
+  display: block;
+}
+body .card .cartContainer {
+  display: none;
+}
+body .card .cartContainer div {
+  margin-top: 20px;
+}
+body .items-container {
+  display: flex;
+  gap: 30px;
+  width: 1400px;
+  background-color: blue;
+  padding: 50px;
+  margin: 70px auto;
+}
+body .items-container .item {
+  width: 300px;
+  padding: 10px;
+  border: 3px solid black;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  background-color: white;
+}
+body .items-container .item .count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px 30px;
+  border-radius: 0 0 20px 0;
+  width: 25px;
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  font-size: 24px;
+  z-index: 99;
+}
+body .items-container .item .mehsul-sekil {
+  height: 300px;
+}
+body .items-container .item .mehsul-sekil img {
+  width: 100%;
+}
+body .items-container .item .mehsul-aciqlama .ulduzsistemi {
+  margin: 10px 0;
+}
+body .items-container .item .qiymetVeButton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+body .items-container .item .qiymetVeButton .qiymet {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+body .items-container .item .qiymetVeButton .qiymet .esasqiymet {
+  font-size: 23px;
+  margin-right: 5px;
+  color: green;
+}
+body .items-container .item .qiymetVeButton .qiymet .kohneqiymet {
+  color: grey;
+}
+body .items-container .item .qiymetVeButton .elaveEt button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: yellowgreen;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

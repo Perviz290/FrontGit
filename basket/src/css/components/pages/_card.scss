@@ -1,0 +1,47 @@
+.checkoutPage {
+   display: flex;
+   padding: 30px;
+
+   & > div {
+      border: 3px solid red;
+      padding: 30px;
+   }
+
+   .leftSide {
+      width: 70%;
+
+      h3 {
+         font-size: 30px;
+      }
+
+      .productSayi {
+         display: flex;
+         justify-content: space-between;
+         margin: 30px 0;
+      }
+
+      table {
+         td {
+            text-align: center;
+            vertical-align: middle;
+         }
+         img {
+            height: 100px;
+         }
+      }
+   }
+
+   .rightSide {
+      width: 30%;
+
+      .solsag {
+         display: flex;
+         justify-content: space-between;
+
+         & > span {
+            font-weight: bold;
+            color: red;
+         }
+      }
+   }
+}

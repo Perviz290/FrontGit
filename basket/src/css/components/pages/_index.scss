@@ -1,0 +1,114 @@
+body {
+   background-color: yellow;
+   position: relative;
+
+   .card {
+      background-color: red;
+      width: 150px;
+      position: absolute;
+      right: 0px;
+      top: -50px;
+      margin-right: 100px;
+      padding: 10px;
+      z-index: 99999 !important;
+
+      &:hover .cartContainer {
+         display: block;
+      }
+
+      .cartContainer {
+         display: none;
+
+         div {
+            margin-top: 20px;
+         }
+      }
+   }
+
+   .items-container {
+      display: flex;
+      gap: 30px;
+      width: 1400px;
+      border: 3px solid red;
+      background-color: seashell;
+      padding: 50px;
+      margin: 70px auto;
+
+      .item {
+         width: 300px;
+         padding: 10px;
+         border: 3px solid black;
+         overflow: hidden;
+         border-radius: 20px;
+         position: relative;
+         background-color: white;
+
+         // Count:
+         .count {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px 30px;
+            border-radius: 0 0 20px 0;
+            width: 25px;
+            color: white;
+            background-color: red;
+            font-weight: bold;
+            font-size: 24px;
+            z-index: 99;
+         }
+
+         // Mehsul sekli:
+         .mehsul-sekil {
+            height: 300px;
+
+            img {
+               width: 100%;
+            }
+         }
+
+         // Mehsul aciqlama:
+         .mehsul-aciqlama {
+            .ulduzsistemi {
+               margin: 10px 0;
+            }
+
+            // .firmaAdi {
+            // }
+         }
+
+         // Qiymet:
+         .qiymetVeButton {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            .qiymet {
+               display: flex;
+               align-items: center;
+               font-weight: bold;
+
+               .esasqiymet {
+                  font-size: 23px;
+                  margin-right: 5px;
+                  color: green;
+               }
+               .kohneqiymet {
+                  color: grey;
+               }
+            }
+            .elaveEt {
+               button {
+                  padding: 10px;
+                  border-radius: 5px;
+                  background-color: yellowgreen;
+                  color: white;
+               }
+            }
+         }
+      }
+   }
+}
