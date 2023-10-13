@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main-section {
+  background-image: url(../img/main-home-rev-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Marcellus", serif;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.top-nav .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav .nav-list li:hover{
+  text-decoration: line-through;
+  transition: .5s;
+}
+
+.nav-list .home {
+  text-decoration: line-through;
+}
+
+.top-nav ul li {
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+.top-nav ul li a {
+  color: #f6f6f6;
+}
+
+#first {
+  padding: 8rem 0;
+}
+
+#first .first-heading {
+  display: flex;
+  justify-content: space-evenly;
+  color: #ffffff;
+  font-size: 55px;
+}
+
+.first-heading span {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.section-logo {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.section-content {
+  text-align: center;
+  color: #ffffff;
+  line-height: 35px;
+}
+
+.section-content p {
+  font-size: 17px;
+}
+
+.theme-btn {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+
+.theme-btn a {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 16px 56px;
+  border: 1px solid #ffffff;
+}
