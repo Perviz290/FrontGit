@@ -1,0 +1,149 @@
+.filterproduct {
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+
+    & > div:first-child,
+    & > div:last-child {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    div:first-child {
+      a {
+        margin-right: 30px;
+        color: gray;
+      }
+
+      a.active {
+        color: black;
+        font-weight: bold;
+      }
+    }
+
+    div:last-child {
+      position: relative;
+
+      &:last-child:hover > div {
+        display: flex;
+      }
+
+      & > div {
+        display: none;
+        position: absolute;
+        right: -30px;
+        top: 100%;
+        width: 385px;
+        z-index: 999;
+        padding: 30px;
+        background-color: black;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          padding: 0;
+
+          span {
+            display: block;
+            margin-bottom: 15px;
+            color: white;
+          }
+          a {
+            color: gray;
+
+            &:hover {
+              color: #ffffff99;
+            }
+          }
+        }
+      }
+    }
+
+    a {
+      font-size: 17px;
+    }
+  }
+
+  .products {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .item {
+      display: block;
+      width: 280px;
+      height: 450px;
+      background-color: red;
+      position: relative;
+
+      &:hover .quicklook {
+        transform: translate(-50%, -57px);
+      }
+
+      & > div:first-child {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0px;
+        padding: 25px 20px;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .quicklook {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, -31px);
+        transition: 0.5s all;
+
+        & > span,
+        & > div {
+          padding: 5px;
+        }
+
+        & > span {
+          padding: 0 20px;
+        }
+
+        & > div {
+          background-color: gray;
+        }
+      }
+
+      & > div:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+
+        span:first-child {
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

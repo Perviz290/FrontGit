@@ -1,0 +1,228 @@
+body {
+  font-family: Catamaran, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #929292;
+  background-color: #fff;
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 1300px;
+  margin: auto;
+}
+
+.sickyheader {
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 9999 !important;
+}
+
+.swiper-container {
+  height: 70vh;
+  width: 1400px;
+  overflow: hidden;
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: 50%;
+    min-height: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  section {
+    display: flex;
+    height: 100%;
+  }
+
+  .pages {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) > a {
+      margin-left: 60px;
+    }
+
+    &:hover > div {
+      display: flex !important;
+    }
+
+    & > div {
+      display: none !important; //flex
+      position: absolute;
+      top: 100%;
+      margin-left: -40px;
+      text-align: center;
+      padding: 50px;
+      background-color: black;
+
+      span {
+        display: block;
+        color: white;
+        margin-bottom: 35px;
+      }
+
+      a {
+        display: list-item;
+        margin-top: 10px;
+        color: gray;
+        transition: 0.2s;
+        transform: translate(0, 0);
+
+        &:hover {
+          list-style-type: "-> ";
+          transform: translate(10px, 0);
+        }
+      }
+    }
+
+    // Bir sutunlu div menu
+    &:not(.wide) > div {
+      flex-direction: column;
+    }
+
+    // Cox sutunlu div menu
+    &.wide > div {
+      display: flex;
+      justify-content: space-between;
+      width: 1000px;
+
+      .category {
+        text-align: start;
+
+        span {
+          font-weight: bold;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+  .leftside {
+    display: flex;
+  }
+
+  .logo {
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 20px;
+    }
+  }
+
+  .rightside {
+    .pages > div {
+      right: 0;
+      padding: 10px;
+
+      input {
+        background-color: black;
+        padding: 10px;
+        caret-color: grey;
+        color: white;
+      }
+    }
+
+    .pages > a {
+      margin-left: 0;
+
+      i {
+        margin-right: 3px;
+      }
+    }
+
+    & > div:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+footer {
+  // div {
+  // 	border: 1px solid red;
+  // }
+
+  .top {
+    display: flex;
+    margin: 100px 0;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+      padding-right: 100px;
+      margin-right: 90px;
+      // border: 1px solid red;
+
+      h2 {
+        color: black;
+        font-size: 19px;
+        margin-bottom: 30px;
+        margin-left: 0;
+      }
+
+      a {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    div {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+
+      span,
+      a {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  a {
+    display: list-item;
+    margin-top: 10px;
+    color: black ;
+    transition: 0.2s;
+    transform: translate(0, 0);
+
+    &:hover {
+      list-style-type: "-> ";
+      transform: translate(10px, 0);
+    }
+  }
+}
+
+.container.sidebar_footer{
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black !important;
+  h2,a{
+    color: white;
+  }
+}

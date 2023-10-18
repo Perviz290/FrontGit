@@ -1,0 +1,646 @@
+.content {
+  position: relative;
+  margin-top: 0;
+  z-index: 100;
+  background-color: #fff;
+  background: 0 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  outline: 0;
+  display: block;
+  .content-inner {
+    background: 0 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: 0;
+    display: block;
+    .title {
+      height: 100px;
+      text-align: left;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+      z-index: 101;
+      background-color: #fafafa;
+      background-position: center 0;
+      background-repeat: no-repeat;
+      background: 0 0;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      .title-holder {
+        position: relative;
+        display: table;
+        width: 100%;
+        background: 0 0;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+        outline: 0;
+        text-align: left;
+        .container {
+          display: table-row;
+          vertical-align: middle;
+          background-color: transparent;
+          position: relative;
+          padding: 0;
+          width: 100%;
+          z-index: 100;
+          background: 0 0;
+          border: 0;
+          margin: 0;
+          outline: 0;
+          text-align: left;
+          &::before {
+            content: " ";
+            display: table;
+          }
+          &::after {
+            content: " ";
+            display: table;
+            clear: both;
+          }
+          .container-inner {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 !important;
+            width: 1300px;
+            margin: 0 auto;
+            background: 0 0;
+            border: 0;
+            outline: 0;
+            text-align: left;
+            .title-subtitle-holder {
+              position: relative;
+              display: block;
+              padding: 0;
+              z-index: 25;
+              background: 0 0;
+              border: 0;
+              margin: 0;
+              vertical-align: baseline;
+              text-align: left;
+              outline: 0;
+              .title-subtitle-holder-inner {
+                position: relative;
+                background: 0 0;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                vertical-align: baseline;
+                outline: 0;
+                display: block;
+                text-align: left;
+                .breadcrumbs-holder {
+                  display: inline-block;
+                  vertical-align: middle;
+                  background: 0 0;
+                  border: 0;
+                  margin: 0;
+                  padding: 0;
+                  outline: 0;
+                  text-align: left;
+                  .breadcrumbs-inner {
+                    a {
+                      color: #080808;
+                      text-decoration: none;
+                      transition: color 0.2s ease-out;
+                      background: 0 0;
+                      border: 0;
+                      margin: 0;
+                      padding: 0;
+                      vertical-align: baseline;
+                      outline: 0;
+                      cursor: pointer;
+                      text-align: left;
+                    }
+                    .current {
+                      background: 0 0;
+                      text-align: left;
+                      border: 0;
+                      margin: 0;
+                      padding: 0;
+                      vertical-align: baseline;
+                      outline: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .container {
+      background-color: #fff;
+      position: relative;
+      padding: 0;
+      width: 100%;
+      z-index: 100;
+      background: 0 0;
+      border: 0;
+      margin: 0;
+      vertical-align: baseline;
+      outline: 0;
+      display: block;
+      &::before {
+        content: " ";
+        display: table;
+      }
+      &::after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+      .container-inner {
+        padding-top: 85px !important;
+        width: 1300px;
+        margin: 0 auto;
+        background: 0 0;
+        border: 0;
+        padding: 0;
+        vertical-align: baseline;
+        outline: 0;
+        &::before {
+          content: "";
+          display: table;
+        }
+        &::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .grid-row {
+          margin-left: -15px;
+          margin-right: -15px;
+          background: 0 0;
+          border: 0;
+          margin: 0;
+          padding: 0;
+          vertical-align: baseline;
+          outline: 0;
+          &::before {
+            content: "";
+            display: table;
+          }
+          &::after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          .page-content-holder {
+            left: 25%;
+            position: relative;
+            float: left;
+            width: 75%;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            background: 0 0;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            vertical-align: baseline;
+            outline: 0;
+            &::before {
+              content: "";
+              display: table;
+            }
+            &::after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            .result-count {
+              line-height: 44px;
+              display: inline;
+              width: 50%;
+              margin: 0 0 30px;
+              float: left;
+              background: 0 0;
+              border: 0;
+              padding: 0;
+              vertical-align: baseline;
+              outline: 0;
+            }
+            .ordering {
+              display: inline;
+              width: 50%;
+              margin: 0 0 30px;
+              float: left;
+              background: 0 0;
+              border: 0;
+              padding: 0;
+              vertical-align: baseline;
+              outline: 0;
+              .orderby {
+                float: right;
+                min-width: 200px;
+                border: 0 !important;
+                clip: rect(0 0 0 0) !important;
+                height: 1px !important;
+                margin: -1px !important;
+                overflow: hidden !important;
+                padding: 0 !important;
+                position: absolute !important;
+                width: 1px !important;
+                option {
+                  font-weight: normal;
+                  display: block;
+                  white-space-collapse: collapse;
+                  text-wrap: nowrap;
+                  min-height: 1.2em;
+                  padding: 0px 2px 1px;
+                }
+              }
+              .select2 {
+                float: right;
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                border: 0;
+                border-radius: 0;
+                text-align: initial;
+                box-sizing: border-box;
+                background-color: #fff;
+                z-index: 9999;
+                width: 200px;
+                margin: 0;
+                background: 0 0;
+                padding: 0;
+                outline: 0;
+                .selection {
+                  background: 0 0;
+                  border: 0;
+                  margin: 0;
+                  padding: 0;
+                  vertical-align: baseline;
+                  outline: 0;
+                  text-align: initial;
+                  .select2-selection {
+                    display: block;
+                    font-size: 14px;
+                    color: #929292;
+                    height: 50px;
+                    line-height: 50px;
+                    padding: 0;
+                    font-family: inherit;
+                    background-color: transparent;
+                    border: 1px solid #e1e1e1;
+                    border-radius: 0;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    background: 0 0;
+                    vertical-align: baseline;
+                    outline: 0;
+                    .select2-selection__rendered {
+                      display: block;
+                      padding: 0 30px 0 20px;
+                      color: inherit;
+                      line-height: inherit;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      overflow: hidden;
+                      box-sizing: border-box;
+                      background: 0 0;
+                      border: 0;
+                      margin: 0;
+                      vertical-align: baseline;
+                      outline: 0;
+                      font-size: 14px;
+                      font-family: inherit;
+                    }
+                    .select2-selection__arrow {
+                      color: #929292;
+                      height: 100%;
+                      line-height: inherit;
+                      position: absolute;
+                      right: 10px;
+                      text-align: center;
+                      top: 0;
+                      width: 20px;
+                      &::before {
+                        font-family: ElegantIcons;
+                        content: "\43";
+                      }
+                      b {
+                        display: none;
+                        border-color: #888 transparent transparent transparent;
+                        border-style: solid;
+                        border-width: 5px 4px 0;
+                        height: 0;
+                        left: 50%;
+                        margin-left: -4px;
+                        margin-top: -2px;
+                        position: absolute;
+                        top: 50%;
+                        width: 0;
+                        background: 0 0;
+                        border: 0;
+                        margin: 0;
+                        padding: 0;
+                        vertical-align: baseline;
+                        outline: 0;
+                        font-weight: bold;
+                        color: #929292;
+                        line-height: inherit;
+                        text-align: center;
+                      }
+                    }
+                  }
+                }
+                .dropdown-wrapper {
+                  background: 0 0;
+                  border: 0;
+                  margin: 0;
+                  padding: 0;
+                  vertical-align: baseline;
+                  outline: 0;
+                }
+              }
+              input {
+                appearance: none;
+                background-color: initial;
+                cursor: default;
+                display: none !important;
+                padding: initial;
+                border: initial;
+              }
+            }
+            .pl-main-holder {
+              margin: 0 0 22px;
+              position: relative;
+              display: inline-block;
+              width: 100%;
+              vertical-align: middle;
+              background: 0 0;
+              border: 0;
+              padding: 0;
+              outline: 0;
+              .products {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+                flex-wrap: wrap;
+                width: 100%;
+
+                .item {
+                  display: block;
+                  width: 280px;
+                  height: 450px;
+                  background-color: red;
+                  position: relative;
+
+                  &:hover .quicklook {
+                    transform: translate(-50%, -70px);
+                  }
+
+                  & > div:first-child {
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    top: 0px;
+                    padding: 25px 20px;
+                    width: 100%;
+                  }
+
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+
+                  .quicklook {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: black;
+                    color: white;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 50%;
+                    transform: translate(-50%, -31px);
+                    transition: 0.5s all;
+
+                    & > span,
+                    & > div {
+                      padding: 5px;
+                    }
+
+                    & > span {
+                      padding: 0 20px;
+                    }
+
+                    & > div {
+                      background-color: gray;
+                    }
+                  }
+
+                  & > div:last-child {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 10px 0;
+                    background-color: white;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 999;
+
+                    span:first-child {
+                      font-weight: bold;
+                      font-size: 18px;
+                    }
+                  }
+                }
+              }
+            }
+            .pagination-holder {
+              position: relative;
+              display: inline-block;
+              width: 100%;
+              vertical-align: middle;
+              margin: 0 0 66px;
+              clear: both;
+              background: 0 0;
+              border: 0;
+              padding: 0;
+              outline: 0;
+              .pagination-inner {
+                position: relative;
+                display: table;
+                width: 100%;
+                text-align: right;
+                background: 0 0;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                vertical-align: baseline;
+                outline: 0;
+                .pagination {
+                  position: relative;
+                  display: table-cell;
+                  vertical-align: top;
+                  width: 99%;
+                  margin: 0;
+                  padding: 0;
+                  .page-numbers {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    list-style-position: inside;
+                    background: 0 0;
+                    border: 0;
+                    outline: 0;
+                    li {
+                      position: relative;
+                      display: inline-block;
+                      vertical-align: top;
+                      margin: 0;
+                      background: 0 0;
+                      border: 0;
+                      padding: 0;
+                      outline: 0;
+                      list-style-position: inside;
+                      span {
+                        color: #080808;
+                        position: relative;
+                        display: inline-block;
+                        width: auto;
+                        margin: 0 12px;
+                        padding: 0;
+                        vertical-align: middle;
+                        text-decoration: none;
+                        cursor: pointer;
+                        white-space: nowrap;
+                        transition: color 0.2s ease-out;
+                        background: 0 0;
+                        border: 0;
+                        outline: 0;
+                      }
+                    }
+                  }
+                }
+                div.all-pagination {
+                  position: relative;
+                  display: table-cell;
+                  vertical-align: top;
+                  width: 1%;
+                  a {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                    padding: 0 0 0 2px;
+                    color: #929292;
+                    &::before {
+                      content: "|";
+                      padding: 0 14px 0 0;
+                      color: #929292;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .sidebar-holder {
+            right: 75%;
+            position: relative;
+            float: left;
+            width: 25%;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            background: 0 0;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            vertical-align: baseline;
+            outline: 0;
+            &::before {
+              content: " ";
+              display: table;
+            }
+            &::after {
+              content: " ";
+              display: table;
+              clear: both;
+            }
+            .sidebar {
+              position: relative;
+              z-index: 11;
+              margin: 0 0 60px;
+              .widget_layered_nav {
+                margin: 0 0 67px;
+                color: #929292;
+                padding: 0;
+                clear: both;
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                vertical-align: middle;
+                .widget-title-holder {
+                  margin-bottom: 20px;
+                  background: 0 0;
+                  border: 0;
+                  margin: 0;
+                  padding: 0;
+                  vertical-align: baseline;
+                  outline: 0;
+                  color: #929292;
+                  .widget-title {
+                    color: #323232;
+                    line-height: 26px;
+                    margin-top: -4px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    margin-bottom: 3px;
+                    font-size: 14px;
+                  }
+                }
+                .widget-layered-nav-list {
+                  padding: 0;
+                  margin: 0;
+                  list-style: none;
+                  background: 0 0;
+                  border: 0;
+                  vertical-align: baseline;
+                  outline: 0;
+                  .widget-layered-nav-list__item {
+                    margin: 2px 0;
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    vertical-align: middle;
+                    padding: 0;
+                    clear: both;
+                    line-height: 18px;
+                    a {
+                      color: #929292;
+                      font-size: 14px;
+                      font-weight: 500;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

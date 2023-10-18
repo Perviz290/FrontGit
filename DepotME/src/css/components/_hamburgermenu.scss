@@ -1,0 +1,93 @@
+#hamburgermenu {
+	position: fixed;
+	right: 0;
+	top: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0F0F0F;
+	width: 650px;
+	min-height: 100vh;
+	color: white;
+	text-align: center;
+	padding: 70px;
+	overflow: hidden;
+	display: none;
+	z-index: 99999999999;
+
+	.closeBtn {
+		position: absolute;
+		right: 40px;
+		top: 10px;
+		cursor: pointer;
+		padding: 10px;
+		display: inline-block;
+		font-size: 30px;
+	}
+
+	& > span {
+		color: #fff !important;
+	}
+
+	& > p {
+		color: #929292;
+		font-size: 24px;
+		margin: 30px;
+	}
+
+	#instagramData {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 200px;
+		margin: 20px;
+
+		.items {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 5px;
+			height: 100%;
+			width: 100%;
+
+			.item {
+				width: 20%;
+
+				a {
+					width: inherit;
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.followus {
+		padding: 20px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #0F0F0F;
+
+		div:first-child {
+			color: #afafaf;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		div:last-child {
+			padding: 30px;
+
+			a {
+				color: white;
+			}
+			a:not(:last-child) {
+				margin-right: 25px;
+			}
+		}
+	}
+}
